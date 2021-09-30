@@ -1,0 +1,66 @@
+html{
+    font-size: 16px;
+}
+
+body{
+	width: 968px; 
+	margin: auto; 
+	background-color: #D8BFD8;
+}
+
+#banner{
+    color: #085ca1;
+}
+
+/*
+GRID DEFINITION
+    7 rows / 4 col 
+    1 named section 2 / 4
+        ' results results results results'
+        'results results results results';
+    position "=" sign
+        #equals{grid-column: span 2 / 4;
+
+ITEM NAMES
+    result
+    numbers
+    zero
+    plus
+    minus
+    times
+    divide
+    clear
+    cl-entry
+    equals
+*/
+#result{
+    grid-area: results;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: right;
+    padding: 20px 1rem;
+    font-size: 30px;
+}
+
+.grid-container{
+    display: grid;
+    grid:  
+    ' results results results results'
+    'results results results results';
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container > button{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+/* #equals{grid-row: 6 / span 2;} */
+#equals{
+    grid-column: 4;
+    grid-row: 6 / span 2;
+}
+
