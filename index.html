@@ -7,32 +7,31 @@
   <title>Home Grown Calc</title>
 </head>
 <body>
-  <!-- TODO size and center page -->
-
   <!-- ========================== -->
   <!-- SECTION banner -->
   <h1 id="banner">CLiFApps Homegrown Calculator</h1>
 
-
   <!-- ******************************* -->
   <!-- SECTION - calculator -->
 <div class="grid-container" >
-  <div id="result">result</div>
-  <button id="divide">/</button>
+  <!-- <div id="viewer"></div> -->
+  <input id="viewer" type="text" value="0"></input>
+  <button  type="number" value="0"id="divide">/</button>
   <button id="times">x</button>
   <button id="minus">-</button>
   <button id="plus">+</button>
-  <button id="">7</button>
-  <button id="">8</button>
-  <button id="">9</button>
-  <button id="">C</button>
-  <button id="">4</button>
-  <button id="">5</button>
-  <button id="">6</button>
-  <button id="">CE</button>  
-  <button id="">1</button>
-  <button id="">2</button>
-  <button id="">3</button>
+  <button id="seven">7</button>
+  <button id="eight">8</button>
+  <button id="nine">9</button>
+  <!-- NOTE disable "C" when "=" || any operator is clicked -->
+  <button id="see">C</button>
+  <button id="four">4</button>
+  <button id="five">5</button>
+  <button id="six">6</button>
+  <button id="seeEee">CE</button>  
+  <button id="one">1</button>
+  <button id="two">2</button>
+  <button id="three">3</button>
   <div id="">&nbsp;</div>
   <button id="zero">0</button>
   <div id="">&nbsp;</div>
@@ -41,9 +40,11 @@
 
 <!-- ******************************* -->
   <!-- SECTION - footer -->
-  <p style="margin-top: 3rem;">Powered by CSS4 and JavaScript</p>
-  <p>Created by CLiFApps</p>
+  <footer id="footer">
+    <p>Powered by CSS4 and JavaScript</p>
+    <p>Created by CLiFApps</p>
+  </footer>
   
-  
+  <script src="main.js"></script>
 </body>
 </html>

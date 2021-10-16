@@ -22,7 +22,7 @@ GRID DEFINITION
         #equals{grid-column: span 2 / 4;
 
 ITEM NAMES
-    result
+    viewer
     numbers
     zero
     plus
@@ -33,34 +33,37 @@ ITEM NAMES
     cl-entry
     equals
 */
-#result{
-    grid-area: results;
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: right;
-    padding: 20px 1rem;
-    font-size: 30px;
-}
-
 .grid-container{
     display: grid;
     grid:  
     ' results results results results'
     'results results results results';
-    grid-gap: 10px;
+    grid-gap: .63rem;
     background-color: #2196F3;
-    padding: 10px;
+    padding: .63rem
+}
+
+#viewer{
+    grid-area: results;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: right;
+    padding: .5rem 1rem;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .grid-container > button{
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
+    padding: 1.35rem 0;
+    font-size: 2rem;
   }
   
-/* #equals{grid-row: 6 / span 2;} */
 #equals{
     grid-column: 4;
     grid-row: 6 / span 2;
 }
 
+#footer{
+    margin-top: 3rem;
+}
