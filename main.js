@@ -9,7 +9,7 @@
     Set viewer=0(zero) and clear que when "CE" is clicked.
 */
 /* 
-    Pseudo code
+    PSEUDO CODE
     Set input to 0(zero) onload
     Declare global var's
         que
