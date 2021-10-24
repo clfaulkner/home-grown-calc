@@ -15,23 +15,34 @@
 */
 /* 
     PSEUDO CODE
-    Set input to 0(zero) onload
+    Set input to 0(zero) onload || reload
     Declare global var's
         inputQue (where the input element goes)
         operatorQue (for the clicked operator)
         resultQue
-        holdQue (for use with the 'CE' function)
+        holdQue (for use with the 'CE' function--holds the last entry, NOT the result. It gets populated from the inputQue after operator selection)
+    addeventlistener for number buttons
+    addeventlistener for operators
+    Function for numeric button click
+        Get input element by id
+        Place button value into input element
     Switch/case for operator onclick
-        "CE" Set input element to 0(zero) (or holdQue?) && clear inputQue
+        "CE" Set input element to holdQue && clear inputQue/operatorQue
         "AC" Set input element to 0(zero) && clear all que's
-        "Operators" Convert input element to number && add to the holdQue && calculate inputQue by operatorQue && add  to resultQue
-        "=" Display resultQue in input element
+        "Operators" Convert input element to number && update the inputQue/holdQue && calculate inputQue by operatorQue && update the resultQue
+        "=" Display resultQue in input element && clear all que's
 */
 
-// setup page on load
+// setup page on load || reload
 
 
 // global vars
+
+
+// addEventListener's
+
+
+// Function -- numeric button click
 
 
 // switch/case
