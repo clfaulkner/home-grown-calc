@@ -19,28 +19,40 @@
     Declare global var's
         inputQue (where the input element goes)
         operatorQue (for the clicked operator)
+        holdQue (holds 1st value entered, or result of inputQue [operator] holdQue)
         resultQue
-        holdQue (for use with the 'CE' function--holds the last entry, NOT the result. It gets populated from the inputQue after operator selection)
+        ??  (for use with the 'CE' function--holds the last entry, NOT the result. It gets populated from the inputQue after operator selection)
     addeventlistener for number buttons
     addeventlistener for operators
+    addeventlistener for CE (pass the "backspace" key)
+    addeventlistener for AC
     Function for numeric button click
         Get input element by id
         Place button value into input element
     Switch/case for operator onclick
-        "CE" Set input element to holdQue && clear inputQue/operatorQue
-        "AC" Set input element to 0(zero) && clear all que's
-        "Operators" Convert input element to number && update the inputQue/holdQue && calculate inputQue by operatorQue && update the resultQue
-        "=" Display resultQue in input element && clear all que's
+        "CE" -- pass the "backspace" key
+        "AC" -- Set input element to 0(zero) && set all que's to 0[zero]
+        "Operators" -- update operatorQue, IF holdQue === 0[zero] && resultQue === 0[zero], Convert input element to float && update holdQue, ELSE Convert input element to float && update inputQue &&calculate inputQue [operatorQue] holdQue && update resultQue
+        "=" -- Display resultQue in input element && set all que's to 0[zero]
 */
 
 // setup page on load || reload
-
+$(document).ready(function () {
+    console.log("zero");
+    $("#viewer").val("0");
+    // document.querySelector("#viewer").value = "0";
+});
 
 // global vars
+let  inputQue, operatorQue, holdQue, resultQue
 
-
-// addEventListener's
-
+// Event Listener's
+$(".numeral").click(function (e) { 
+    e.preventDefault();
+    // BUG elem is undefined!
+    let elem = $(this).val()
+    $("viewer").val(elem)
+});
 
 // Function -- numeric button click
 

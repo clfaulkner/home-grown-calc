@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=`, initial-scale=1.0">
-  <script src="jquery-3.6.0.min.js"></script>
+  <!-- <script src="jquery-3.6.0.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="local.css">
   <title>Home Grown Calc</title>
 </head>
@@ -15,29 +16,29 @@
 
   <!-- ******************************* -->
   <!-- SECTION - calculator -->
-<div class="grid-container" >
+<form class="grid-container" >
   <input id="viewer" type="text"></input>
-  <button id="divide">/</button>
+  <button id="divide" class="">/</button>
   <button id="times">x</button>
   <button id="minus">-</button>
   <button id="plus">+</button>
-  <button id="seven">7</button>
-  <button id="eight">8</button>
-  <button id="nine">9</button>
+  <button id="seven" class="numeral">7</button>
+  <button id="eight" class="numeral">8</button>
+  <button id="nine" class="numeral">9</button>
   <button id="aa-see">AC</button>
-  <button id="four">4</button>
-  <button id="five">5</button>
-  <button id="six">6</button>
+  <button id="four" class="numeral">4</button>
+  <button id="five" class="numeral">5</button>
+  <button id="six" class="numeral">6</button>
   <button id="see-ee">CE</button>  
-  <button id="one">1</button>
-  <button id="two">2</button>
-  <button id="three">3</button>
+  <button id="one" class="numeral">1</button>
+  <button id="two" class="numeral">2</button>
+  <button id="three" class="numeral">3</button>
   <div id="">&nbsp;</div>
-  <button id="zero">0</button>
+  <button id="zero" class="numeral">0</button>
   <!-- <div id="">&nbsp;</div> -->
   <button id="decimal">.</button>
   <button id="equals">=</button>
-</div>
+</form>
 
 <!-- ******************************* -->
   <!-- SECTION - footer -->
