@@ -1,4 +1,7 @@
-Calc.js
+// Calc.js
+
+// Borrowed from Derek Banas at:
+// https://www.newthinktank.com/2019/04/learn-javascript-javascript-calculator/
  
 // Stores previous value if any
 let prevVal = "";
